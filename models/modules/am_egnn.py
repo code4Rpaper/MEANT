@@ -76,7 +76,7 @@ class AMEGNN(nn.Module):
         return h, x
 
 '''
-Below are the implementation of the adaptive multi-channel message passing mechanism
+Below are the implementation of the adaptive equivariant message passing mechanism
 '''
 
 @singleton
@@ -110,7 +110,7 @@ class RollerPooling(nn.Module):
 
 class AM_E_GCL(nn.Module):
     '''
-    Adaptive Multi-Channel E(n) Equivariant Convolutional Layer
+    reference from AMGCL
     '''
 
     def __init__(self, input_nf, output_nf, hidden_nf, n_channel, channel_nf, radial_nf,
